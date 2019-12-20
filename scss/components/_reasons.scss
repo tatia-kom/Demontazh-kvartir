@@ -1,0 +1,83 @@
+@import "layout/var";
+
+.reasons {
+  padding-top: 60px;
+
+  @media #{$xs} {
+    padding-top: 30px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-wrap: wrap;
+
+    @media #{$xs} {
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    margin-top: 107px;
+    width: calc(33.33% - 32px);
+    flex-shrink: 0;
+
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        .reasons__name:before {
+          content: '#{$i}';
+        }
+      }
+    }
+
+    @media #{$lg} {
+      margin-top: 50px;
+    }
+
+    @media #{$xs} {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    min-height: 75px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 14px;
+    position: relative;
+
+    @media #{$xs} {
+      font-size: 18px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 90px;
+      line-height: 85px;
+      color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__text {
+    font-family: $textFont;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "layout/var";
+
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: $mainFont;
+
+    &.modal-opened {
+        overflow: hidden;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+header, footer, section, div, span, p, button, a, input, textarea {
+    box-sizing: border-box;
+}
+
+button,input,textarea{
+    outline: none;
+}
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1420px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    @media (max-width: 1480px) {
+        width: 1140px;
+    }
+
+    @media #{$lg} {
+        width: 932px;
+    }
+
+    @media #{$sm} {
+        width: 738px;
+    }
+
+    @media #{$xs} {
+        width: calc(100% - 30px);
+    }
+}
+
+.title {
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+
+    @media #{$sm} {
+        font-size: 36px;
+    }
+
+    @media #{$xs} {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

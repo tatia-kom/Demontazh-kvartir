@@ -1,0 +1,106 @@
+@import "layout/var";
+
+.can {
+  padding-top: 40px;
+
+  @media #{$sm} {
+    padding-top: 30px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+    @media #{$xs} {
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    background: #F2F2F2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 35px;
+    display: flex;
+    width: calc(50% - 16px);
+
+    @media #{$sm} {
+      margin-top: 25px;
+      width: calc(50% - 12px);
+    }
+
+    @media #{$xs} {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    min-height: 363px;
+    width: 33.7%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+
+    @media #{$xs} {
+      min-height: 0;
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px 34px;
+
+    @media #{$sm} {
+      padding: 24px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 23px;
+
+    @media #{$xs} {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    margin: 32px 0 10px;
+    padding: 0;
+    list-style: none;
+
+    @media #{$lg} {
+      margin: 20px 0;
+    }
+
+    li {
+      font-family: $textFont;
+      font-size: 18px;
+      line-height: 30px;
+      position: relative;
+      padding-left: 20px;
+
+      @media #{$sm} {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &:before {
+        content: '— ';
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  &__button {
+    align-self: center;
+    margin-top: auto;
+  }
+}

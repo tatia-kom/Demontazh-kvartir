@@ -1,0 +1,110 @@
+@import "layout/var";
+
+.footer {
+  border-top: 1px solid #EAEAEA;
+  margin-top: 118px;
+  padding-bottom: 40px;
+
+  @media #{$lg} {
+    margin-top: 70px;
+  }
+
+  @media #{$sm} {
+    margin-top: 30px;
+  }
+
+  @media #{$xs} {
+    padding-bottom: 15px;
+  }
+
+  &__top {
+    padding: 30px 0 24px;
+
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+
+    @media #{$xs} {
+      padding-top: 15px;
+    }
+
+    &:after {
+      background: #F2F3F4;
+    }
+  }
+
+  &__logo {
+    @media #{$lg} {
+      font-size: 22px;
+      line-height: 25px;
+      padding-left: 60px;
+    }
+
+    &:before {
+      background: url('../img/logo-black.svg');
+
+      @media #{$lg} {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__block {
+    color: black;
+
+    .header__content {
+      color: black;
+    }
+
+    a.header__content {
+      transition: 0.3s;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__button {
+    width: 314px;
+    flex-shrink: 0;
+    margin-left: 47px;
+
+    @media #{$lg} {
+      width: 250px;
+    }
+
+    @media #{$sm} {
+      margin: 15px auto 0;
+    }
+  }
+
+  &__menu {
+    margin-top: 25px;
+
+    @media #{$xs} {
+      margin-top: 15px;
+    }
+
+    .header__link {
+      color: black;
+      transition: 0.3s;
+
+      @media #{$xs} {
+        margin: 5px 0;
+      }
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  .header__menu-wrap {
+    @media #{$xs} {
+      display: block;
+    }
+  }
+}
