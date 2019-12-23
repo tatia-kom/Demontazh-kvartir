@@ -38,6 +38,23 @@ $(document).ready(function() {
         }
     });
 
+    // modal
+
+    $('.open-modal').click(function(e) {
+        e.preventDefault();
+        $('body').addClass('modal-opened');
+        $('.modal').addClass('modal--opened');
+    });
+
+    $('.modal').click(function() {
+        $('.modal').removeClass('modal--opened');
+        $('body').removeClass('modal-opened');
+    });
+
+    $('.modal__content').click(function(e) {
+        e.stopPropagation();
+    });
+
     // example
 
     $('.example__slider').slick({

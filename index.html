@@ -56,13 +56,13 @@
                 <div class="top__left">
                     <h1 class="top__title">Демонтаж квартиры<br><span>"под ключ"</span> с вывозом мусора</h1>
                     <p class="top__subtitle">Уложимся в срок или заплатим за каждый<br> день просрочки</p>
-                    <button class="button top__button"><span>Получить консультацию<br> главного прораба</span></button>
+                    <button class="button top__button open-modal"><span>Получить консультацию<br> главного прораба</span></button>
                 </div>
                 <div class="top__right">
                     <div class="top__right-content">
                         <p class="top__right-title">Сделайте рассчет стоимости демонтажа вашей квартиры</p>
                         <p class="top__right-text">Ответьте на несколько простых<br> вопросов и получите расчет стоимости демонтажа вашей квартиры</p>
-                        <button class="button"><span>Калькулятор демонтажа</span></button>
+                        <button class="button open-modal"><span>Калькулятор демонтажа</span></button>
                         <p class="top__agree">Нажимая на кнопку, вы даете согласие на<br> обработку своих персональных данных и<br> соглашаетесь с <a href="#">Пользовательским соглашением</a></p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                             <li>ламината</li>
                             <li>стяжки пола</li>
                         </ul>
-                        <button class="button can__button"><span>Заказать демонтаж</span></button>
+                        <button class="button can__button open-modal"><span>Заказать демонтаж</span></button>
                     </div>
                 </div>
                 <div class="can__block">
@@ -103,7 +103,7 @@
                             <li>шпаклевки, обоев</li>
                             <li>стеклоблочные</li>
                         </ul>
-                        <button class="button can__button"><span>Заказать демонтаж</span></button>
+                        <button class="button can__button open-modal"><span>Заказать демонтаж</span></button>
                     </div>
                 </div>
                 <div class="can__block">
@@ -117,7 +117,7 @@
                             <li>гипсокартона</li>
                             <li>шпатлевку и краску</li>
                         </ul>
-                        <button class="button can__button"><span>Заказать демонтаж</span></button>
+                        <button class="button can__button open-modal"><span>Заказать демонтаж</span></button>
                     </div>
                 </div>
                 <div class="can__block">
@@ -131,7 +131,7 @@
                             <li>межкомнатные и входные двери (железные)</li>
                             <li>электропроводку</li>
                         </ul>
-                        <button class="button can__button"><span>Заказать демонтаж</span></button>
+                        <button class="button can__button open-modal"><span>Заказать демонтаж</span></button>
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                         <p class="how__text">Поэтапная оплата выполненных<br> работ</p>
                     </div>
                 </div>
-                <button class="button how__button"><span>Получить консультацию<br> главного прораба</span></button>
+                <button class="button how__button open-modal"><span>Получить консультацию<br> главного прораба</span></button>
             </div>
         </div>
     </section>
@@ -353,7 +353,7 @@
                     <p class="header__name">Для консультации</p>
                     <a href="tel:" class="header__content">+7 495 675 43 121</a>
                 </div>
-                <button class="button footer__button"><span>Получить консультацию<br> главного прораба</span></button>
+                <button class="button footer__button open-modal"><span>Получить консультацию<br> главного прораба</span></button>
             </div>
             <nav class="header__menu-wrap">
                 <div class="header__menu footer__menu">
@@ -367,6 +367,24 @@
             </nav>
         </div>
     </footer>
+
+
+    <!-- MODAL -->
+
+    <div class="modal">
+        <div class="top__right modal__content">
+            <form class="top__right-content">
+                <p class="top__right-title modal__title">Выберите удобный способ связи</p>
+
+                <input type="text" placeholder="Ваше имя" class="modal__input">
+
+                <input type="text" placeholder="Ваш номер телефона" class="modal__input">
+
+                <button class="button modal__button"><span>Позвоните мне</span></button>
+                <p class="top__agree">Нажимая на кнопку, вы даете согласие на<br> обработку своих персональных данных и<br> соглашаетесь с <a href="#">Пользовательским соглашением</a></p>
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
